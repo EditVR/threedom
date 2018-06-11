@@ -1,0 +1,11 @@
+name: 3D Object Model Field Module
+type: module
+description: Creates a field that handles 3D object and displays then for any content type.
+core: 8.x
+package: EditVR
+
+dependencies:
+  - drupal:node
+  - drupal:field
+  - drupal:file
+  - drupal:text

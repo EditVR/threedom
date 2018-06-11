@@ -1,0 +1,7 @@
+field.widget.settings.threedom_widget:
+  type: mapping
+  label: '3D Object Model (config/schema) widget settings'
+  mapping:
+    progress_indicator:
+      type: string
+      label: 'Progress indicator'

@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * A 3D Object Model using Field Types API.
+ */
+use Drupal\Core\Routing\CurrentRouteMatch;
+/**
+ * Implements hook_help().
+ */
+function threedom_help($route_name, CurrentRouteMatch $route_match) {
+  switch ($route_name) {
+    case 'help.page.threedom':
+      $txt = file_get_contents(drupal_get_path('module', 'threedom') . '/README.md');
+      return str_replace("\n", "\n<br />", SafeMarkup::checkPlain($txt));
+  }
+  return '';
+}
